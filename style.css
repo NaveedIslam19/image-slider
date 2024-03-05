@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.image-gellery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.gellery {
+    display: flex;
+    width: 900px;
+    overflow-x: scroll;
+}
+
+.gellery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.gellery div img {
+    width: 100%;
+    filter: grayscale(100);
+    transition: 0.4s ease;
+}
+
+.gellery::-webkit-scrollbar {
+    display: none;
+}
+
+#btn1 img {
+    width: 50px;
+    margin: 40px;
+    cursor: pointer;
+}
+
+#btn2 img {
+    width: 50px;
+    margin: 40px;
+    cursor: pointer;
+}
+
+.gellery div img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transition: 0.4s ease;
+}
